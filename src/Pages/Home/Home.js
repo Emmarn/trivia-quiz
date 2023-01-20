@@ -5,11 +5,11 @@ import ErrorMessage from "../../Components/Errormessage/ErrorMessage.js";
 import Categories from "../../Data/Categories";
 import "./Home.css";
 
-const Home = ({ fetchQuestions }) => {
+const Home = ({ fetchQuestions, name, setName }) => {
   const [category, setCategory] = useState("");
   const [difficulty, setDifficulty] = useState("");
   const [error, setError] = useState(false);
-  const [name, setName] = useState("");
+  //const [name, setName] = useState("");
 
   
   const navigate = useNavigate();
@@ -24,7 +24,7 @@ const Home = ({ fetchQuestions }) => {
       navigate("/quiz");
     }
   };
-  console.log(fetchQuestions)
+
 
   return (
     <div className="content">
@@ -80,7 +80,7 @@ const Home = ({ fetchQuestions }) => {
           </Button>
         </div>
       </div>
-      <img src="/gcat.jpg" className="banner" alt="quiz app" />
+    
     </div>
   );
 };

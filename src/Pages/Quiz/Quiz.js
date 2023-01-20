@@ -7,6 +7,7 @@ const Quiz = ({ name, questions, score, setScore, setQuestions }) => {
   const [options, setOptions] = useState();
   const [currQues, setCurrQues] = useState(0);
 
+
   useEffect(() => {
     setOptions(
       questions &&
@@ -17,11 +18,12 @@ const Quiz = ({ name, questions, score, setScore, setQuestions }) => {
     );
   }, [currQues, questions]);
 
-  console.log(questions);
+
 
   const handleShuffle = (options) => {
     return options.sort(() => Math.random() - 0.5);
   };
+  console.log({name})
 
   return (
     <div className="quiz">

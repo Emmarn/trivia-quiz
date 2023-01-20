@@ -5,14 +5,18 @@ import "./App.css";
 import Footer from "./Components/Footer/Footer.js";
 import Header from "./Components/Header/Header.js";
 import Home from "./Pages/Home/Home";
-
 import Quiz from "./Pages/Quiz/Quiz";
 import Result from "./Pages/Result/Result";
+import lightbg from "./img/lightbg.jpg";
+
 
 function App() {
   const [questions, setQuestions] = useState();
   const [name, setName] = useState();
   const [score, setScore] = useState(0);
+
+  
+
 
   const fetchQuestions = async (category = "", difficulty = "") => {
     const { data } = await axios.get(
@@ -26,7 +30,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div className="app" style={{ backgroundImage: 'url("/quizi.jpg")' }}>
+      <div className="app" style={{ backgroundImage: 'url(' + lightbg + ')', backgroundSize: 'auto'}}>
         <Header />
         <Routes>
           <Route path="/" element={<Home setName={setName} name={name} fetchQuestions={fetchQuestions}/>}>

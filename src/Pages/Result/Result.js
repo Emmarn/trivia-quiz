@@ -25,6 +25,15 @@ const Result = ({ name, score }) => {
       >
         Go to homepage
       </Button>
+      <Button
+        variant="contained"
+        color="secondary"
+        size="large"
+        style={{ alignSelf: "center", marginTop: 20 }}
+        a href="https://play-it.netlify.app/" 
+      >
+        Back to Play it!
+      </Button>
     </div>
   );
 };
