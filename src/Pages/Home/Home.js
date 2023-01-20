@@ -70,6 +70,7 @@ const Home = ({ fetchQuestions, name, setName }) => {
               Hard
             </MenuItem>
           </TextField>
+          <div className="button-container">
           <Button
             variant="contained"
             color="primary"
@@ -78,6 +79,13 @@ const Home = ({ fetchQuestions, name, setName }) => {
           >
             Start Quiz
           </Button>
+          <Button a href="https://play-it.netlify.app/" variant="contained"
+            color="primary"
+            size="Large"
+            >
+           Back to Play it!
+          </Button>
+          </div>
         </div>
       </div>
     

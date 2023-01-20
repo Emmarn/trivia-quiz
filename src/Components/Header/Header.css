@@ -16,3 +16,16 @@
   width: 100%;
   background-color: grey;
 }
+
+.title{color: rgba(13, 110, 78, 0.8);
+  font-size: 140px;
+  font-style: oblique;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px rgb(15, 43, 33),
+    0 0 102px rgb(21, 51, 41),
+    0 0 151px rgb(16, 46, 36);}

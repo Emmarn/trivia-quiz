@@ -42,4 +42,11 @@
     flex: 0.8;
     justify-content: space-evenly;
   }
+
+  .button-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+  }
   

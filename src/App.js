@@ -7,7 +7,7 @@ import Header from "./Components/Header/Header.js";
 import Home from "./Pages/Home/Home";
 import Quiz from "./Pages/Quiz/Quiz";
 import Result from "./Pages/Result/Result";
-import lightbg from "./img/lightbg.jpg";
+import lightbg2 from "./img/lightbg2.jpg";
 
 
 function App() {
@@ -30,7 +30,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div className="app" style={{ backgroundImage: 'url(' + lightbg + ')', backgroundSize: 'auto'}}>
+      <div className="app" style={{ backgroundImage: 'url(' + lightbg2 + ')', backgroundSize: 'auto'}}>
         <Header />
         <Routes>
           <Route path="/" element={<Home setName={setName} name={name} fetchQuestions={fetchQuestions}/>}>
