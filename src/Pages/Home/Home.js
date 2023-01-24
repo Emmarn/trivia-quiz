@@ -79,7 +79,7 @@ const Home = ({ fetchQuestions, name, setName }) => {
           >
             Start Quiz
           </Button>
-          <Button a href="https://play-it.netlify.app/" variant="contained"
+          <Button a href="https://play-it-games.netlify.app/" variant="contained"
             color="primary"
             size="Large"
             >
