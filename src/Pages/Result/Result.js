@@ -30,7 +30,7 @@ const Result = ({ name, score }) => {
         color="secondary"
         size="large"
         style={{ alignSelf: "center", marginTop: 20 }}
-        a href="https://play-it.netlify.app/" 
+        a href="https://play-it-games.netlify.app/" 
       >
         Back to Play it!
       </Button>
