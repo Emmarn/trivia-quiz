@@ -34,6 +34,10 @@
     align-items: center;
 
   }
+  .btn{
+  
+    background-color: rgb(75, 75, 199) !important;
+ }
 
   @media (max-width: 500px) {
     .content {
@@ -51,6 +55,7 @@
      .btn{
       margin: 3px!important;  
       text-transform: none !important;
+      background-color: rgb(75, 75, 199) !important;
    }
 
   }
