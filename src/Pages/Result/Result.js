@@ -15,8 +15,9 @@ const Result = ({ name, score }) => {
 
   return (
     <div className="result">
-      <span className="title">Final Score : {score}</span>
+      <span className="titleFinal">Final Score : {score}</span>
       <Button
+      className="btn"
         variant="contained"
         color="secondary"
         size="large"
@@ -26,9 +27,10 @@ const Result = ({ name, score }) => {
         Go to homepage
       </Button>
       <Button
-        variant="contained"
-        color="secondary"
-        size="large"
+      className="btn"
+      variant="contained"
+            color="secondary"
+            size="large"
         style={{ alignSelf: "center", marginTop: 20 }}
         a href="https://play-it-games.netlify.app/" 
       >

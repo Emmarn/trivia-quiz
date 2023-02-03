@@ -2,7 +2,6 @@ import axios from "axios";
 import { useState } from "react";
 import { BrowserRouter, Route, Routes} from "react-router-dom";
 import "./App.css";
-import Footer from "./Components/Footer/Footer.js";
 import Header from "./Components/Header/Header.js";
 import Home from "./Pages/Home/Home";
 import Quiz from "./Pages/Quiz/Quiz";
@@ -48,7 +47,6 @@ function App() {
           </Routes>
       
       </div>
-      <Footer />
     </BrowserRouter>
   );
 }

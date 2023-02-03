@@ -1,3 +1,6 @@
+
+
+
 .title {
   text-transform: uppercase;
   font-size: 8vw;
@@ -27,4 +30,15 @@
     0 0 82px rgb(42, 84, 221),
     0 0 92px rgb(26, 54, 179),
     0 0 102px rgb(41, 94, 209),
-    0 0 151px rgb(23, 165, 190);}
+    0 0 151px rgb(23, 165, 190);
+  }
+
+    @media (max-width: 500px) {
+      .title {
+      text-transform: uppercase;
+      font-size: 10vw;
+      font-family: "Montserrat", sans-serif;
+      cursor: pointer;
+      }
+     
+    }

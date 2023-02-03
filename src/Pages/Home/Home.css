@@ -19,21 +19,6 @@
     padding: 8px;
   }
   
-  @media (max-width: 800px) {
-    .content {
-      flex-direction: column-reverse;
-      align-items: center;
-    }
-    .banner {
-      width: 85%;
-      padding: 0;
-      padding-top: 20px;
-    }
-    .settings {
-      width: 100%;
-    }
-  }
-  
   .settings__select {
     display: flex;
     flex-direction: column;
@@ -47,6 +32,26 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+  }
+
+  @media (max-width: 500px) {
+    .content {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    .banner {
+      width: 85%;
+      padding: 0;
+      padding-top: 20px;
+    }
+    .settings {
+      width: 100%;
+    }
+     .btn{
+      margin: 3px!important;  
+      text-transform: none !important;
+   }
 
   }
   

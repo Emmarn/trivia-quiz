@@ -50,7 +50,9 @@ const Question = ({
       <h1>Question {currQues + 1} :</h1>
 
       <div className="singleQuestion">
-        <h2>{questions[currQues].question}</h2>
+        <h2>
+        {questions[currQues].question}
+        </h2>
         <div className="options">
           {error && <ErrorMessage>{error}</ErrorMessage>}
           {options &&
@@ -67,6 +69,7 @@ const Question = ({
         </div>
         <div className="controls">
           <Button
+          className="btn"
             variant="contained"
             color="secondary"
             size="large"
@@ -77,6 +80,7 @@ const Question = ({
             Quit
           </Button>
           <Button
+          className="btn"
             variant="contained"
             color="primary"
             size="large"
