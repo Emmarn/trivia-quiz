@@ -7,6 +7,7 @@ import Home from "./Pages/Home/Home";
 import Quiz from "./Pages/Quiz/Quiz";
 import Result from "./Pages/Result/Result";
 import lightbg1 from "./img/lightbg1.jpg";
+import he from 'he';
 
 
 function App() {
@@ -23,8 +24,18 @@ function App() {
         category && `&category=${category}`
       }${difficulty && `&difficulty=${difficulty}`}&type=multiple`
     );
-
-    setQuestions(data.results);
+    const decodedQuestions = data.results.map((question) => {
+      return {
+        ...question,
+        question: he.decode(question.question),
+        incorrect_answers: question.incorrect_answers.map((answer) =>
+          he.decode(answer)
+        ),
+        correct_answer: he.decode(question.correct_answer),
+      };
+    });
+  
+    setQuestions(decodedQuestions);
   };
 
   return (
